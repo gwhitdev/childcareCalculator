@@ -1,8 +1,6 @@
 $(document).ready(function() {
 
-let initialAmount = 0; // The initial amount of money to start working with
-
-
+let initialAmount; // The initial amount of money to start working with
 
 /* HMRC variables */
 let divideBy = 8;
@@ -12,8 +10,6 @@ let timesBy = 2;
 let firstSubTotal;
 let secondSubTotal;
 let finalSubTotal;
-let needToPay = 0; // The final totalled amount that I need to pay HMRC
-
 
 /* Work out the childcare amounts */
     
@@ -33,7 +29,7 @@ let needToPay = 0; // The final totalled amount that I need to pay HMRC
         let parsedSecondSubTotal = Number.parseFloat(secondSubTotal);
 
         thirdSubTotal = parsedSecondSubTotal + parsedInitialAmount;
-        let finalSubTotal = Number.parseFloat(thirdSubTotal).toFixed(2);
+        finalSubTotal = Number.parseFloat(thirdSubTotal).toFixed(2);
     
         let numberOfWays = $("input[name=numberOfShares").val();
         let parsedNumberOfWays = Number.parseFloat(numberOfWays);
@@ -43,16 +39,10 @@ let needToPay = 0; // The final totalled amount that I need to pay HMRC
         let difference = finalSubTotal - parsedSplitChildCare;
         let fixedDifference = difference.toFixed(2);
         
-        
-
-
         $("#toppedUp").text(finalSubTotal);
         $("#difference").text(fixedDifference);
         $("#personalShare").text(parsedSplitChildCare);
         e.preventDefault();
     });
-
-
-
 
 }); // END
