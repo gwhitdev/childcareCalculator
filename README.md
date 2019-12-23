@@ -5,3 +5,5 @@ This is a basic calculator to work out approximately how much money one would ne
 The calculator takes into account that HMRC gives the account holder £2 for every £8 paid in.
 
 It is only meant as a guide and does not take away the responsibility for the person paying in money to make sure they are paying in the correct amounts.
+
+childcareCalculator is written using HTML, CSS, Javascript and jQuery. It is a basic implementation and design. If you think you can improve it, feel free to create a pull request etc.
