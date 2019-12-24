@@ -44,5 +44,8 @@ let finalSubTotal;
         $("#personalShare").text(parsedSplitChildCare);
         e.preventDefault();
     });
-
+    $("#reset").click(function(e) {
+        $("#toppedUp, #difference, #personalShare").text('0');
+        
+    });
 }); // END
