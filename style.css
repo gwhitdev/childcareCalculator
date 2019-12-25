@@ -5,16 +5,8 @@ body {
 }
 
 
-.spacer {
-    height: 20px;
-}
-hr {
-    margin-top: 50px;
-    margin-bottom: 50px;
-    border: 0;
-    height: 1px;
-    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(255, 255, 255, 0.75), rgba(0, 0, 0, 0));
-}
+
+
 .formLabel {
     padding-bottom: 15px;
 }
@@ -45,17 +37,7 @@ input#split {
 .infoText {
     font-size: 1rem;
 }
-.form {
-    /*margin-top: 100px;*/
-    
-    border-radius: 15px;
-    scroll-behavior: smooth;
-    overflow: scroll;
-    box-shadow: 0px 0px 100px 0px grey;
-    background: rgb(131,58,180);
-    background: linear-gradient(180deg, rgba(131,58,180,0.8) 0%, rgba(253,29,29,0.8) 50%, rgba(252,176,69,0.8) 100%);
 
-}
 
 .info {
     margin-top: 25px;
