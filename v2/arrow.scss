@@ -2,13 +2,14 @@ $background: lightcoral;
 $easing: cubic-bezier(.25,1.7,.35,.8);
 $duration: 0.5s;
 
-body {
+/*body {
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	height: 100vh;
 	background: $background;
 }
+*/
 
 .arrow-icon {
   background-color:$background;
@@ -20,6 +21,7 @@ body {
   position: relative;
   cursor: pointer;
   border-radius: 4px;
+
 }
 
 .left-bar {
