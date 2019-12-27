@@ -1,5 +1,7 @@
 # childcareCalculator
 
+[Please read licence.](/LICENCE)
+
 This is a basic calculator to work out approximately how much money one would need to pay into an HMRC Tax Free Childcare account.
 
 The calculator takes into account that HMRC gives the account holder £2 for every £8 paid in.
@@ -10,4 +12,3 @@ childcareCalculator is written using HTML, CSS, Javascript and jQuery. It is a b
 
 [Try-out the calculator now](https://gtw1986.github.io/childcareCalculator/childcare.html)
 
-[Experimental v2](https://github.com/gtw1986/childcareCalculator/v2/childcare.html)
