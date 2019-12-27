@@ -56,12 +56,14 @@ $(document).ready(function() {
             $('#message').text('Please press reset and enter data');
             $('#message').show();
             $('.infoText').hide();
+            $('.extraInfo').hide();
         } 
         if(!numberInputOne.val()) {
             
             $('#message').text('Please press reset and enter data');
             $('#message').show();
             $('.infoText').hide();
+            $('.extraInfo').hide();
         }
             if(numberInputThree.val() && numberInputOne.val()){
            
@@ -70,12 +72,14 @@ $(document).ready(function() {
                 $('#message').text('Consider paying less money in.');
                 $('.infoText').show();
                 $('#message').show();
+                $('.extraInfo').show();
             }
             if(fixedDifference < 0) {
                 
                 $('#message').text('Consider paying more money in.');
                 $('.infoText').show();
                 $('#message').show();
+                $('.extraInfo').show();
             }
             if(fixedDifference == 0) {
                 
