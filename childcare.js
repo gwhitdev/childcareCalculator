@@ -3,19 +3,21 @@
 
 
 $(document).ready(function() {
-$('.info').toggle(false);
-let initialAmount; // The initial amount of money to start working with
+    
+    $('.info').toggle(false);
 
-/* HMRC variables */
-let divideBy = 8;
-let timesBy = 2;
+    let initialAmount; // The initial amount of money to start working with
 
-/* Totals */
-let firstSubTotal;
-let secondSubTotal;
-let finalSubTotal;
+    /* HMRC variables */
+    let divideBy = 8;
+    let timesBy = 2;
 
-/* Work out the childcare amounts */
+    /* Totals */
+    let firstSubTotal;
+    let secondSubTotal;
+    let finalSubTotal;
+
+    /* Work out the childcare amounts */
     
     $("#submit").click(function(e) {
         $('.info').show();
@@ -23,10 +25,7 @@ let finalSubTotal;
         totalChildCare = $("input[name=amountToPay").val();
         initialAmount = $("input[name=initialAmount").val();
         let parsedChildCare = Number.parseFloat(totalChildCare);
-        let parsedInitialAmount = Number.parseFloat(initialAmount);
-
-        console.log("childCare: " + totalChildCare);
-        console.log("initialAmount: " + initialAmount);
+        let parsedInitialAmount = Number.parseFloat(initialAmount);    
 
         firstSubTotal = initialAmount / divideBy;
         let parsedFirstSubTotal = Number.parseFloat(firstSubTotal);
@@ -49,18 +48,43 @@ let finalSubTotal;
         $("#difference").text(fixedDifference);
         $("#personalShare").text(parsedSplitChildCare);
 
-        if(fixedDifference > 0) {
-            $('#message').text('Consider paying less money in');
+        let numberInputOne = $('#inputOne');
+        let numberInputTwo = $('#inputTwo');
+        let numberInputThree = $('#inputThree');
+
+        if(!numberInputThree.val()){
+            $('#message').text('Please press reset and enter data');
             $('#message').show();
-        }
-        if(fixedDifference < 0) {
-            $('#message').text('Consider paying more money in');
+            $('.infoText').hide();
+        } 
+        if(!numberInputOne.val()) {
+            
+            $('#message').text('Please press reset and enter data');
             $('#message').show();
+            $('.infoText').hide();
         }
-        if(fixedDifference == 0) {
-            $('#message').text("It looks like you're considering paying the right amount of money in.");
-            $('#message').show();
-        }
+            if(numberInputThree.val() && numberInputOne.val()){
+           
+            if(fixedDifference > 0) {
+            
+                $('#message').text('Consider paying less money in.');
+                $('.infoText').show();
+                $('#message').show();
+            }
+            if(fixedDifference < 0) {
+                
+                $('#message').text('Consider paying more money in.');
+                $('.infoText').show();
+                $('#message').show();
+            }
+            if(fixedDifference == 0) {
+                
+                $('#message').text("It looks like you're considering paying the right amount of money in.");
+                $('.infoText').show();
+                $('#message').show();
+            }
+        
+        } 
         e.preventDefault();
 
     });
@@ -69,7 +93,7 @@ let finalSubTotal;
         window.location = '#form';
         $('#message').toggle();
         $('.info').toggle();
+        
     });
-
 
 }); // END
