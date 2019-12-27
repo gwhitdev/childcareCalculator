@@ -33,17 +33,24 @@ h1 {
     padding-right: 15%;
 }
 
-.info {
+.extraInfo {
     margin-top: 5%;
     padding-left: 5%;
     padding-right: 5%;
+}
+
+.info {
+    margin-top: 0%;
+    padding-left: 5%;
+    padding-right: 5%;
+    
 }
 .button {
     margin-top: 15px;
     padding: 15px 32px;
     background: rgba(255, 255, 255, 0.2);
     color: white;
-border: none;
+    border: none;
     box-shadow: 0px 0px 100px 0px grey;
 }
 
@@ -57,4 +64,36 @@ input[type=number] {
     text-align: center;
     border-radius: 20px;
     border: none;
+}
+
+/* 
+Extra small devices (portrait phones, less than 576px) 
+No media query since this is the default in Bootstrap because it is "mobile first"
+*/
+ 
+ 
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {  
+ 
+}
+ 
+/* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
+@media (min-width: 768px) {  
+
+}
+ 
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) { 
+    .info {
+        margin-top: 5%;
+    }
+    .infoText {
+        margin-top: 0%;
+        font-size: 1.5rem;
+    }
+}
+ 
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {  
+    
 }
