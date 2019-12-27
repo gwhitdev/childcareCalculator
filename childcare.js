@@ -1,3 +1,7 @@
+// Please read licence at https://gtw1986.github.io/childcareCalculator/
+// Copyright 2019 Gareth Whitley
+
+
 $(document).ready(function() {
 $('.info').toggle(false);
 let initialAmount; // The initial amount of money to start working with
