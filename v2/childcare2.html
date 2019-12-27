@@ -1,18 +1,19 @@
 <html>
     <head>
         <meta charset="UTF-8">
+        <script src="https://kit.fontawesome.com/935d16e381.js" crossorigin="anonymous"></script>
         <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
         <link href="style2.css" type="text/css" rel="stylesheet">
         <title>Childcare Worker-outer</title>
     </head>
-
+    
     <body>
-        <div class="container">
+        <div class="container"id="restart">
 
         
         <div class="form">
             <h1>Tax Free Childcare Calculator</h1>
-                <form id="form">
+               <form>
                         <div>
                             
                             <input type="number"width="150"placeholder="£ to be paid"name="amountToPay">
@@ -34,10 +35,12 @@
                         <div>
                             <button id="reset" class="button" type="reset">Reset</button>
                         </div>
+                        <div class="spacer"></div>
+
                         
                 </form>
                 <hr>
-                        <div class="infoText">
+                        <div class="infoText"id="info">
                             Personal full share: £<span id="personalShare">0</span>
                         </div>
                         <div class="spacer"></div>
@@ -54,6 +57,7 @@
                             may need to pay into an HMRC Tax Free Childcare account. HMRC gives you £2 for every £8 that 
                             you pay in.
                         </div>
+                        
         </div>
     </div>
         
@@ -61,5 +65,5 @@
     </body>
     <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
     <script src="../childcare.js"></script>
-    <script src="arrow.js"></script>
+    
 </html>

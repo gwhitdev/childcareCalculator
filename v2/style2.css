@@ -4,8 +4,23 @@ body {
     font-family: 'Roboto', sans-serif;
     background: black;
     color: white;
+    
+}
+a:link {
+    text-decoration: none;
+    color: white;
+}
+a:visited {
+    color: white;
 }
 
+a:active {
+    color: white;
+}
+.fa-arrow-circle-down, .fa-arrow-circle-up {
+    font-size: 3rem;
+    margin-top:  5%;
+}
 .button {
     margin-top: 15px;
     padding: 15px 32px;
@@ -45,8 +60,7 @@ hr {
     height: 100%;
     width: 100%;
     
-    scroll-behavior: smooth;
-    overflow: scroll;
+    
     padding-bottom: 5%;
     box-shadow: 0px 0px 100px 0px grey;
     background: rgb(131,58,180);
@@ -59,6 +73,8 @@ hr {
     font-size: 0.8rem;
     padding-left: 5%;
     padding-right: 5%;
+    scroll-behavior: smooth;
+    overflow: auto;
 }
 .infoText {
     padding-left: 5%;
@@ -107,12 +123,12 @@ h1 {
 }
     
     
-   
+
     
 
     
     
-}
+
 
 
 /* Small devices (portrait tablets and large phones, 600px and up) */

@@ -13,7 +13,8 @@ let finalSubTotal;
 
 /* Work out the childcare amounts */
     
-    $("#form").submit(function(e) {
+    $("#submit").click(function(e) {
+        window.location = '#info';
         totalChildCare = $("input[name=amountToPay").val();
         initialAmount = $("input[name=initialAmount").val();
         let parsedChildCare = Number.parseFloat(totalChildCare);
@@ -46,6 +47,12 @@ let finalSubTotal;
     });
     $("#reset").click(function(e) {
         $("#toppedUp, #difference, #personalShare").text('0');
-        
+        window.location = '#form';
     });
+    
+    
+    
+        
+    
+   
 }); // END
