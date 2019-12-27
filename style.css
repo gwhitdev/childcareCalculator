@@ -28,7 +28,13 @@ h1 {
     box-shadow: 0px 0px 100px 0px grey;
 
 }
-
+hr {
+    margin-top: 5%;
+    margin-bottom: 1.5%;
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(255, 255, 255, 0.75), rgba(0, 0, 0, 0));
+}
 .infoText {
     margin-top: 5%;
 }
@@ -39,6 +45,7 @@ h1 {
 }
 
 .extraInfo {
+    font-size: 0.7rem;
     margin-top: 5%;
     padding-left: 5%;
     padding-right: 5%;
@@ -52,6 +59,15 @@ h1 {
     padding-right: 5%;
     
     
+}
+#message {
+    margin-bottom: 2.5%;
+    background: rgba(0,0,0,0.4);
+    padding:2.5%;
+
+}
+#consider {
+    margin-top: 4%;
 }
 .button {
     margin-top: 15px;
@@ -75,8 +91,8 @@ input[type=number] {
 }
 
 #hmrc {
-    margin-top: 1.5%;
-    font-size: 1rem;
+    margin-top: 0.5%;
+    font-size: 0.8rem;
 }
 /* 
 Extra small devices (portrait phones, less than 576px) 

@@ -1,5 +1,5 @@
 $(document).ready(function() {
-
+$('.info').toggle(false);
 let initialAmount; // The initial amount of money to start working with
 
 /* HMRC variables */
@@ -14,6 +14,7 @@ let finalSubTotal;
 /* Work out the childcare amounts */
     
     $("#submit").click(function(e) {
+        $('.info').show();
         window.location = '#info';
         totalChildCare = $("input[name=amountToPay").val();
         initialAmount = $("input[name=initialAmount").val();
@@ -43,16 +44,28 @@ let finalSubTotal;
         $("#toppedUp").text(finalSubTotal);
         $("#difference").text(fixedDifference);
         $("#personalShare").text(parsedSplitChildCare);
+
+        if(fixedDifference > 0) {
+            $('#message').text('Consider paying less money in');
+            $('#message').show();
+        }
+        if(fixedDifference < 0) {
+            $('#message').text('Consider paying more money in');
+            $('#message').show();
+        }
+        if(fixedDifference == 0) {
+            $('#message').text("It looks like you're considering paying the right amount of money in.");
+            $('#message').show();
+        }
         e.preventDefault();
+
     });
     $("#reset").click(function(e) {
         $("#toppedUp, #difference, #personalShare").text('0');
         window.location = '#form';
+        $('#message').toggle();
+        $('.info').toggle();
     });
-    
-    
-    
-        
-    
-   
+
+
 }); // END
