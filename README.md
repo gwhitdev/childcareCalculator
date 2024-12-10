@@ -10,5 +10,5 @@ It is only meant as a guide and does not take away the responsibility for the pe
 
 childcareCalculator is written using HTML, CSS, Javascript and jQuery. It is a basic implementation and design. If you think you can improve it, feel free to create a pull request etc.
 
-[Try-out the calculator now](https://gtw1986.github.io/childcareCalculator/childcare.html)
+[Try-out the calculator now](https://gwhitdev.github.io/childcareCalculator/childcare.html)
 
